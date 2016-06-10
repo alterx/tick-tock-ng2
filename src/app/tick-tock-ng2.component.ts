@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LoginComponent } from './+login';
-import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
+import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Router } from '@angular/router';
 import { MainComponent } from './+main';
 
 @Component({
@@ -17,4 +17,5 @@ import { MainComponent } from './+main';
 ])
 export class TickTockNg2AppComponent {
   title = "TITLE"
+  constructor(private router: Router) {}
 }
